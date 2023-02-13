@@ -10,11 +10,11 @@
 <atom:link href="https://bioconductor.github.io/biocblog/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog for the Bioconductor community!</description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Sat, 25 Feb 2023 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 22 Feb 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Bioconductor Carpentries instructors Year 1</title>
   <dc:creator>Maria Doyle</dc:creator>
-  <link>https://bioconductor.github.io/biocblog/posts/2023-02-25-carpentries-update/index.html</link>
+  <link>https://bioconductor.github.io/biocblog/posts/2023-02-22-carpentries-update/index.html</link>
   <description><![CDATA[ 
 
 
@@ -158,8 +158,8 @@
 
  ]]></description>
   <category>education</category>
-  <guid>https://bioconductor.github.io/biocblog/posts/2023-02-25-carpentries-update/index.html</guid>
-  <pubDate>Sat, 25 Feb 2023 00:00:00 GMT</pubDate>
+  <guid>https://bioconductor.github.io/biocblog/posts/2023-02-22-carpentries-update/index.html</guid>
+  <pubDate>Wed, 22 Feb 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Recommended Awesome Lists for Bioconductor Community: Oct 2022 Edition</title>
