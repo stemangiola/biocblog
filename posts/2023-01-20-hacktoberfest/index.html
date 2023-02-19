@@ -6,11 +6,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Johannes Rainer">
-<meta name="dcterms.date" content="2022-01-18">
-<meta name="description" content="The 3rd metaRbolomics hackathon took place as a in-person workshop in Wittenberg (Germany) in November 2021. The aim was to improve interoperability of metabolomics/mass spectrometry-related R packages, combine development efforts and identify gaps and needs in current available functionality. It was a fun event with a lot of discussions and coding as well as socializing and networking.">
+<meta name="author" content="Maria Doyle">
+<meta name="author" content="Kozo Nishida">
+<meta name="author" content="Kevin Rue-Albrecht">
+<meta name="dcterms.date" content="2023-01-20">
+<meta name="description" content="Last October, Bioconductor joined Hacktoberfest and got great community contributions there. Here, we describe its success and notify the community we plan to participate in 2023.">
 
-<title>Bioconductor community blog - metaRbolomics hackathon to improve interoperability of metabolomics-related R packages</title>
+<title>Bioconductor community blog - Bioconductor Hacktoberfest 2022 review and looking ahead to 2023</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,13 +66,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Bioconductor community blog - metaRbolomics hackathon to improve interoperability of metabolomics-related R packages">
-<meta property="og:description" content="The 3rd metaRbolomics hackathon took place as a in-person workshop in
-Wittenberg (Germany) in November 2021.">
+<meta property="og:title" content="Bioconductor community blog - Bioconductor Hacktoberfest 2022 review and looking ahead to 2023">
+<meta property="og:description" content="Last October, Bioconductor joined Hacktoberfest and got great community contributions there.
+Here, we describe its success and notify the community we plan to participate in 2023.">
 <meta property="og:site-name" content="Bioconductor community blog">
-<meta name="twitter:title" content="Bioconductor community blog - metaRbolomics hackathon to improve interoperability of metabolomics-related R packages">
-<meta name="twitter:description" content="The 3rd metaRbolomics hackathon took place as a in-person workshop in
-Wittenberg (Germany) in November 2021.">
+<meta name="twitter:title" content="Bioconductor community blog - Bioconductor Hacktoberfest 2022 review and looking ahead to 2023">
+<meta name="twitter:description" content="Last October, Bioconductor joined Hacktoberfest and got great community contributions there.
+Here, we describe its success and notify the community we plan to participate in 2023.">
 <meta name="twitter:image" content="https://bioconductor.github.io/biocblog//images/twitter-card.png">
 <meta name="twitter:creator" content="@Bioconductor">
 <meta name="twitter:image-height" content="124">
@@ -137,42 +139,34 @@ Wittenberg (Germany) in November 2021.">
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">metaRbolomics hackathon to improve interoperability of metabolomics-related R packages</h1>
+      <h1 class="title">Bioconductor Hacktoberfest 2022 review and looking ahead to 2023</h1>
                   <div>
         <div class="description">
-          <p>The 3rd metaRbolomics hackathon took place as a in-person workshop in Wittenberg (Germany) in November 2021. The aim was to improve interoperability of metabolomics/mass spectrometry-related R packages, combine development efforts and identify gaps and needs in current available functionality. It was a fun event with a lot of discussions and coding as well as socializing and networking.</p>
+          <p>Last October, Bioconductor joined Hacktoberfest and got great community contributions there. Here, we describe its success and notify the community we plan to participate in 2023.</p>
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Metabolomics</div>
-                <div class="quarto-category">Mass Spectrometry</div>
-                <div class="quarto-category">Hackathon</div>
-                <div class="quarto-category">Open Science</div>
+                <div class="quarto-category">events</div>
               </div>
                   </div>
   </div>
     
-  <div class="quarto-title-meta-author">
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-heading">Affiliation</div>
-    
-      <div class="quarto-title-meta-contents">
-      <a href="https://github.com/jorainer">Johannes Rainer</a> 
-    </div>
-      <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              Eurac Research
-            </p>
-        </div>
-      </div>
-
+  
   <div class="quarto-title-meta">
 
-        
+      <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+               <p>Maria Doyle </p>
+               <p>Kozo Nishida </p>
+               <p>Kevin Rue-Albrecht </p>
+            </div>
+    </div>
+      
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 18, 2022</p>
+        <p class="date">January 20, 2023</p>
       </div>
     </div>
     
@@ -190,16 +184,81 @@ Wittenberg (Germany) in November 2021.">
 
 
 
-<p>The 3rd metaRbolomics hackathon was organized by Steffen Neumann to bring developers and users of mass spectrometry and metabolomics-related R packages together to improve interoperability between packages, identify gaps and needs in current functionality and to foster collaboration between developers. The event took place from the 22-24 of November, with funding from the <a href="https://www.denbi.de/">de.NBI ELIXIR-DE</a> in Wittenberg (Germany) as an in-person event. As a safety measure, participants had the opportunity for on-site fast COVID-19 self-tests and all participants wore masks during the whole event.</p>
-<p>Participants were also allowed to give flash talks presenting either R packages or approaches and concepts such as <a href="https://github.com/mariallr">Maria Llambrich</a> presenting the <a href="https://cran.r-project.org/web/packages/amanida/index.html"><code>amanida</code></a> R package for meta-analysis of metabolomics studies or <a href="https://github.com/hechth">Helge Hecht</a> giving an overview of machine learning approaches for annotation of small compounds in mass spectrometry data.</p>
-<p><img src="MLlambrich.jpg" class="img-fluid"></p>
-<p><img src="HHecht.jpg" class="img-fluid"></p>
-<p>After the actual hacking session participants socialized for example on the Christmas Market in Wittenberg.</p>
-<p><img src="market.jpg" class="img-fluid"></p>
-<p>Among projects and collaborations that were started at the hackathon were a new <code>MsBackend</code> for the <a href="https://doi.org/doi:10.18129/B9.bioc.Spectra"><code>Spectra</code></a> Bioconductor package allowing handling of TimsTOF data (<a href="https://github.com/rformassspectrometry/MsBackendTimsTof/"><code>MsBackendTimsTOF</code></a>), updates and fixes for the <a href="https://github.com/tnaake/MsQuality/"><code>MsQuality</code></a> package as well as further development and expansion of the <a href="https://github.com/mengchen18/xcmsViewer"><code>xcmsViewer</code></a>.</p>
-<p>Summarizing, the hackathon was a very nice event fostering open science and open development in the metabolomics community.</p>
+<section id="what-is-hacktoberfest" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-hacktoberfest">What is Hacktoberfest?</h2>
+<p>In October last year, Bioconductor participated in <a href="https://hacktoberfest.com/">Hacktoberfest</a>. Hacktoberfest is a worldwide celebration of open-source projects that is held during the month of October. To take part, people had to <a href="https://hacktoberfest.com/auth/">register</a> before October, 31<sup>st</sup>, have four pull requests accepted (i.e., merged) between October 1<sup>st</sup> and October 31<sup>st</sup>. The first 40,000 participants (both maintainers and contributors) who complete Hacktoberfest can choose a prize that is either a tree planted in their name or a t-shirt.</p>
+<p><img src="hacktoberfest_website.png" class="img-fluid"></p>
+</section>
+<section id="why-did-bioconductor-join" class="level2">
+<h2 class="anchored" data-anchor-id="why-did-bioconductor-join">Why did Bioconductor join?</h2>
+<p>As described in <a href="https://bioconductor.github.io/bioc_coc_multilingual/en-US.html">the Bioconductor Code of Conduct</a>, the Bioconductor community values an open approach to science that promotes:</p>
+<ul>
+<li>sharing of ideas, code, software and expertise</li>
+<li>collaboration</li>
+<li>diversity and inclusivity</li>
+<li>a kind and welcoming environment</li>
+<li>community contributions</li>
+</ul>
+<p>Since the Hacktoberfest fits these values, we decided to join it.</p>
+</section>
+<section id="what-did-bioconductor-do-for-hacktoberfest" class="level2">
+<h2 class="anchored" data-anchor-id="what-did-bioconductor-do-for-hacktoberfest">What did Bioconductor do for Hacktoberfest?</h2>
+<p>Bioconductor chose to highlight some Bioconductor projects that people could contribute to.</p>
+<p>Community member, <a href="https://github.com/kevinrue">Kevin Rue-Albrecht</a> hosted a Meetup event on <a href="https://github.com/carpentries-incubator/bioc-project">the Carpentries bioc-project</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocproject_github.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocproject_github</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocproject_carpentries.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocproject_carpentries</figcaption><p></p>
+</figure>
+</div>
+<p>Community member, <a href="https://github.com/kozo2">Kozo Nishida</a> hosted a Meetup event on <a href="https://bioconductor.github.io/biocblog/">the Bioconductor community blog</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocblog_github.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocblog_github</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocblog_website.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocblog_website</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="what-were-the-outcome-and-learnings" class="level2">
+<h2 class="anchored" data-anchor-id="what-were-the-outcome-and-learnings">What were the outcome and learnings?</h2>
+<p>One participant at the Carpentries bioc-project meetup, Milan Malfait <a href="https://github.com/MilanMlft"><span class="citation" data-cites="MilanMlft">@MilanMlft</span></a> from Belgium, created Hacktoberfest pull requests to proofread every single episode of the Carpentries bioc-project lesson and fix typos.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocproject_contribution.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocproject_contribution</figcaption><p></p>
+</figure>
+</div>
+<p>A participant at the blog meetup, Jeremy Selva <a href="https://github.com/JauntyJJS"><span class="citation" data-cites="JauntyJJS">@JauntyJJS</span></a> from Singapore, created a great contribution for <a href="https://bioconductor.github.io/biocblog/">the biocblog</a>.</p>
+<ul>
+<li><a href="https://bioconductor.github.io/biocblog/posts/2022-10-22-awesome-lists/">The contribution post</a></li>
+<li><a href="https://github.com/Bioconductor/biocblog/pull/24">The PR</a></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="biocblog_contribution.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">biocproject_contribution</figcaption><p></p>
+</figure>
+</div>
+<p>The contributions from the above participants were excellent and we would like to encourage more people to take part in 2023. In support of that, we will create greater awareness of Bioconductor’s plans to participate in Hacktoberfest, such as through this blog, advertise and take suggestions for Bioconductor projects earlier, such as in the new <code>#hacktoberfest</code> channel in <a href="https://slack.bioconductor.org/">Bioconductor Slack</a> and at the <a href="https://support.bioconductor.org/p/9147691/">BioC2023 conference August 2nd-4th</a>. We also learnt that in order to get people to contribute it really helps to have well-defined issues in the repositories, so we aim to do that for Hacktoberfest 2023.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>We joined Hacktoberfest as an opportunity to take part in an event that aligns with Bioconductor values and to connect with community members. The participants of Hacktoberfest made great contributions to Bioconductor projects. We will advertise and plan the event earlier this year so stay tuned for updates!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
